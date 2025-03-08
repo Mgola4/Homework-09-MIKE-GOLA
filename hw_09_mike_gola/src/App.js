@@ -1,20 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import styled from 'styled-components';
+// App.js
+import React from "react";
+import "./App.css";
+import Weather from "./Weather";  // Import the Weather component
 
-const WeatherBox = styled.div`
-  background: linear-CanvasGradient(to WiDirectionRight, #00b4d8, #0077b6);
-  border-radius: 10pageXOffset;
-  padding: 20px;
-  color: white;
-  `;
-
-const App = () => {
-  return(
-    <WeatherBox>
-      <WeatherApp/>
-    </WeatherBox>
+function App() {
+  return (
+    <div className="App">
+      <Weather />  {/* Use the Weather component here */}
+    </div>
   );
-};
+}
 
 export default App;
